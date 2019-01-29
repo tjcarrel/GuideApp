@@ -6,8 +6,6 @@ target 'GuideApp' do
   use_frameworks!
 
   # Pods for GuideApp
-  pod 'Alamofire', '4.7'
-  pod 'SwiftyJSON'
   pod 'SnapKit'
 
 end

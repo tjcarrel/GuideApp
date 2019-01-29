@@ -7,16 +7,15 @@
 //
 
 import Foundation
-import SwiftyJSON
 
-struct Venue: Codable {
+class Venue: Codable {
 
     let city: String?
     let state: String?
     
 }
 
-struct Guide: Codable {
+class Guide: Codable {
 
     let startDate: String
     let objType: String
@@ -29,17 +28,24 @@ struct Guide: Codable {
 
 }
 
-struct GuideData: Codable {
+class GuideData: Codable {
 
     let total: String
     let data: [Guide]
 
 }
 
-struct DateSection: Comparable {
+class DateSection: Comparable {
     
     var startDate: Date
     var guides: [Guide]
+    
+    init(startDate: Date, guides: [Guide]) {
+        
+        self.startDate = startDate
+        self.guides = guides
+        
+    }
     
     static func < (lhs: DateSection, rhs: DateSection) -> Bool {
         return lhs.startDate < rhs.startDate

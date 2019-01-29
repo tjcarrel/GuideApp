@@ -7,8 +7,6 @@
 //
 
 import Foundation
-import Alamofire
-import SwiftyJSON
 
 let endpoint = "https://www.guidebook.com/service/v2/upcomingGuides/"
 

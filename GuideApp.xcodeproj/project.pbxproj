@@ -12,7 +12,7 @@
 		3416BBFD21FE5DF400ADF324 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3416BBFC21FE5DF400ADF324 /* Assets.xcassets */; };
 		3416BC0021FE5DF400ADF324 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3416BBFE21FE5DF400ADF324 /* LaunchScreen.storyboard */; };
 		3416BC0821FE5F5700ADF324 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3416BC0721FE5F5700ADF324 /* NetworkManager.swift */; };
-		3416BC0A21FE5F8C00ADF324 /* Structs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3416BC0921FE5F8C00ADF324 /* Structs.swift */; };
+		3416BC0A21FE5F8C00ADF324 /* Classes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3416BC0921FE5F8C00ADF324 /* Classes.swift */; };
 		3416BC0C21FE5FA900ADF324 /* GuideTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3416BC0B21FE5FA900ADF324 /* GuideTableViewCell.swift */; };
 		C685AA25CE1D610F22A43E0B /* Pods_GuideApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 40841E56F67C6EF2DD8BE562 /* Pods_GuideApp.framework */; };
 /* End PBXBuildFile section */
@@ -25,7 +25,7 @@
 		3416BBFF21FE5DF400ADF324 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3416BC0121FE5DF400ADF324 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3416BC0721FE5F5700ADF324 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
-		3416BC0921FE5F8C00ADF324 /* Structs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Structs.swift; sourceTree = "<group>"; };
+		3416BC0921FE5F8C00ADF324 /* Classes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Classes.swift; sourceTree = "<group>"; };
 		3416BC0B21FE5FA900ADF324 /* GuideTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GuideTableViewCell.swift; sourceTree = "<group>"; };
 		40841E56F67C6EF2DD8BE562 /* Pods_GuideApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GuideApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B37106731D3F0A808087BB1A /* Pods-GuideApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GuideApp.debug.xcconfig"; path = "Target Support Files/Pods-GuideApp/Pods-GuideApp.debug.xcconfig"; sourceTree = "<group>"; };
@@ -68,7 +68,7 @@
 				3416BBF521FE5DF300ADF324 /* AppDelegate.swift */,
 				3416BBF721FE5DF300ADF324 /* GuideViewController.swift */,
 				3416BC0721FE5F5700ADF324 /* NetworkManager.swift */,
-				3416BC0921FE5F8C00ADF324 /* Structs.swift */,
+				3416BC0921FE5F8C00ADF324 /* Classes.swift */,
 				3416BC0B21FE5FA900ADF324 /* GuideTableViewCell.swift */,
 				3416BBFC21FE5DF400ADF324 /* Assets.xcassets */,
 				3416BBFE21FE5DF400ADF324 /* LaunchScreen.storyboard */,
@@ -193,17 +193,13 @@
 			);
 			inputPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-GuideApp/Pods-GuideApp-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
 				"${BUILT_PRODUCTS_DIR}/SnapKit/SnapKit.framework",
-				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputFileListPaths = (
 			);
 			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SnapKit.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -217,7 +213,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3416BC0A21FE5F8C00ADF324 /* Structs.swift in Sources */,
+				3416BC0A21FE5F8C00ADF324 /* Classes.swift in Sources */,
 				3416BC0821FE5F5700ADF324 /* NetworkManager.swift in Sources */,
 				3416BC0C21FE5FA900ADF324 /* GuideTableViewCell.swift in Sources */,
 				3416BBF821FE5DF300ADF324 /* GuideViewController.swift in Sources */,
