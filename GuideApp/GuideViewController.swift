@@ -8,6 +8,7 @@
 
 import UIKit
 import SnapKit
+import SafariServices
 
 class GuideViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
     
@@ -87,7 +88,16 @@ class GuideViewController: UIViewController, UITableViewDataSource, UITableViewD
     }
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return cellHeight
+        return UITableView.automaticDimension
+    }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let section = self.Guides[indexPath.section]
+        let guide = section.guides[indexPath.row]
+        let guideURL = "https://www.guidebook.com/\(guide.url)"
+        let url = URL(string: guideURL)
+        let safariVC = SFSafariViewController(url: url!)
+        present(safariVC, animated: true, completion: nil)
     }
     
 }
